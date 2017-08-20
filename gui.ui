@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>百度图片爬虫</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_key">
+     <property name="text">
+      <string>关键词</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="3">
+    <widget class="QLineEdit" name="edit_key"/>
+   </item>
+   <item row="0" column="6">
+    <widget class="QPushButton" name="bt_crawl">
+     <property name="text">
+      <string>爬取</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_dir">
+     <property name="text">
+      <string>保存目录</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="3">
+    <widget class="QLineEdit" name="edit_dir"/>
+   </item>
+   <item row="1" column="6">
+    <widget class="QPushButton" name="bt_select">
+     <property name="text">
+      <string>选择</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_start">
+     <property name="text">
+      <string>起始</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QSpinBox" name="spin_start"/>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_max">
+     <property name="text">
+      <string>最大张数</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QSpinBox" name="spin_max"/>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_jobs">
+     <property name="text">
+      <string>线程数</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QSpinBox" name="spin_jobs"/>
+   </item>
+   <item row="2" column="6">
+    <widget class="QPushButton" name="bt_auto_j">
+     <property name="text">
+      <string>自动选择</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
